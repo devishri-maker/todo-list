@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>To-Do List</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div class="heading">
+        <img class="heading__img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALgAAACUCAMAAAAXgxO4AAAAq1BMVEX///995/8AAAAtvOgcHBzU1dfBwsSnp6dbXF3Q0NAVFRU4NzfP0NKC9P+ur68ZGRmMjY5mr7uA7v9mu8s8PD1+6v9FRUYWAwBOhIx7e3sKAAD4+Pi8vLxzc3MelbYvyPgqjacgbYE9wuocDQRm2vZKye3d3d3v7+8oKCgvLy9u4PhmZmZSUlKVlpcMDAwdFBAfTF1RobNAl60/Y2U8eIUVVGkgnMNOsMc4pcLjX3RjAAAEr0lEQVR4nO2cC3faOBBGaxMMhpRQantLgaR1edg80u1um+b//7JibLk4kWRJM7K6e+aeNqflSPZF+UZjJ8CbNwRBEARBEARBEARBEAQ6i37okP7C1Hs3zx5HvjOy+c5QfOjnUT5yxONZfWi44P44Sm4AjEaQ2cWimy156Ecg8VGeQ8wL8dCN+OXPf1AcISrG4knmbE/xYeJf//7E+PYOxrfLUf5RGPOp+Oe/MPEvnx96JZsZjHV5lFg2Zp8WY9JizNsPSOKb2IMQV9572ZjKe1+cCkt8A9KuvaVj9r3f3ljiON6p3Puy3r3SG0kcJyct3mUk4+pUKOJI+ZZ7X+UbSxwp37K69F56Y4h3n28c8Q69vatIgsW/v8Xw1ss3hvhfH0Dixt7x/rNLce1++Xvig0tx03wXm7pLccP9pGxGDsWV8r3m5rvnUhyQ79SlOMuJgneP4+1M3Lguvepia+NmH9fYv5vrXXu7aUDm+Wbebjqnhjc338V1tAtxlXx7/Jyk1Uwn4sZ9p843xs2yvnh9z2vsfflP5+KVt0nfYd4od/m64uZ9p3qQ7aAdi7OcyMdI+k6KdbOsJ27ed7yruuxeXKMuU0FdOhHX2U/WDW/WdxDv8jXE62trBW9+33Fzs2y+f3u9197diRt7x6wum2O7EtfoO8181/v3i5kdiev0Ha532tzVuxIH5Fvg3Y04uC45CetC3Hz/Zn3+1Xp3It783Y1gjCetS85M++J1D28fo1iX3Ygr5YS73qzv8L9TtsWx+05X4qzvrGVjeOvtyfJtX5x/jfpyzEbszc+3dfE6A+3P7YU36zviZ2xTXGU/8bg5qetSPM2iuK39xLY4uO9IZ9oTh9elPGG2xJn3WrrePG9PyduWuEq+W+qy5YUNdsSZt3S9Y0nfafW2I26eE7V82xIX9BQF7/a+Y1Ncqe/EHG8WHhVvC+Iq+fZ4+Y4V+qVFcYS6VPFGF1fqO/K6VHuBF7K4Sl1y861TlzbEvWoflJ2S6x3r5BtdvCqvlv3b7Prbprhx31G7HrQmLvhZlII3W29pZdgTZxmQnY6fb+atro0pHhv2HYN8F8y+44jHnkK+UfbBkv0G54U25n3HzNtLcV4hpNR3mPeM662lfZ6FJG7cd4zWu5iFIR7HCmdndXm93rFpTnoo4uZ9xzgnOOLw6yoDbwTxGbTv6OcbR/yhzMkslsD2k8ag2luLyhss/vXH0/2Zn+9l/CyG3D83H3y+PNgy8xXPT+W0+6cfMPHsY4kvhTtGaabgUGyi+dsioztnwMRB7+eEoSO+uKZccdfiTSUB2+n8moP/OHL47vaCQ0NouhWIT/LBmSmA03A8FzAengAHnq9Wq3k2EYkfi699ANtTvgy4LPPTFnDgYHkmkoov+rcAgmM25JIdA9BxJ2fxcYs4aMlvpysu01vIgpcrLhZPwjAMJjCWAmBHHZzO5CLx4CaPjkkU5fn4zyIq/uZ3d4FAfBEm/irc7bYhv8Cccf4+no5+Eko+tyQY3uSn/mIBCiQut8vJaZXdDEXLzdgNDkmWHA/8zaFzjkme58fDQOlzP3b9YDL4Y5gEfdMPiCEIgiAIgiAIgiAIgiD+R/wCtUJhGZD9ih4AAAAASUVORK5CYII=">
+        <h1 class="heading__title">To-Do List</h1>
+      </div>
+      <form class="form">
+        <div>
+          <label class="form__label" for="todo">~ Today I need to ~</label>
+          <input class="form__input"
+               type="text"
+               id="todo"
+               name="to-do"
+               size="30"
+               required>
+          <button class="button"><span>Submit</span></button>
+        </div>
+      </form>
+      <div>
+        <ul class="toDoList">
+        </ul>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
